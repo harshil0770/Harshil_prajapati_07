@@ -66,7 +66,7 @@ select * from contactemployee;
 -- 2) Statement to create the Employee table 
 create table employee
 (
-employeeid int ,
+employeeid int not null unique,
 firstname varchar(45) not null,
 lastname varchar(45) not null,
 salary decimal (10,2),
